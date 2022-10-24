@@ -7,6 +7,14 @@
 
 import UIKit
 
+class UIButtonWithoutHighlightOnClick : UIButton {
+    override var isHighlighted: Bool {
+        didSet {
+            super.isHighlighted = false
+        }
+    }
+}
+
 class ViewController: UIViewController {
     
     var cluesLabel: UILabel!
@@ -173,7 +181,7 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -185,7 +193,9 @@ class ViewController: UIViewController {
         
         currentAnswer.text = currentAnswer.text?.appending(buttonTitle)
         activatedButtons.append(sender)
-        sender.isHidden = true
+        UIView.animate(withDuration: 0.75) {
+            sender.alpha = 0.0
+        }
     }
     
     @objc func submitTapped(_ sender: UIButton) {
@@ -221,16 +231,20 @@ class ViewController: UIViewController {
         solutions.removeAll(keepingCapacity: true)
         loadLevel()
         
-        for button in letterButtons {
-            button.isHidden = false
+        UIView.animate(withDuration: 1) {
+            for button in self.letterButtons {
+                button.alpha = 1.0
+            }
         }
     }
     
     func clearAnswer(action: UIAlertAction? = nil) {
         currentAnswer.text = ""
         
-        for button in activatedButtons {
-            button.isHidden = false
+        UIView.animate(withDuration: 1) {
+            for button in self.letterButtons {
+                button.alpha = 1.0
+            }
         }
         
         activatedButtons.removeAll()
@@ -278,5 +292,5 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
 }
