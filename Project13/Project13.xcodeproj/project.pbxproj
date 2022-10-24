@@ -12,7 +12,6 @@
 		8CEDF4BF2902950C00D466FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDF4BE2902950C00D466FF /* ViewController.swift */; };
 		8CEDF4C42902950D00D466FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEDF4C32902950D00D466FF /* Assets.xcassets */; };
 		8CEDF4C72902950D00D466FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEDF4C52902950D00D466FF /* LaunchScreen.storyboard */; };
-		8CEDF4CF2902952400D466FF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CEDF4CE2902952300D466FF /* Info.plist */; };
 		8CEDF4D12902953300D466FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEDF4D02902953300D466FF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -126,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CEDF4CF2902952400D466FF /* Info.plist in Resources */,
 				8CEDF4C72902950D00D466FF /* LaunchScreen.storyboard in Resources */,
 				8CEDF4C42902950D00D466FF /* Assets.xcassets in Resources */,
 				8CEDF4D12902953300D466FF /* Main.storyboard in Resources */,
@@ -289,6 +287,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +316,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
